@@ -1,3 +1,5 @@
+from email.mime import image
+from turtle import update
 from django.contrib.auth import get_user_model
 from django.db import models
 
@@ -10,3 +12,5 @@ class NewsStory(models.Model):
     )
     pub_date = models.DateTimeField()
     content = models.TextField()
+
+    

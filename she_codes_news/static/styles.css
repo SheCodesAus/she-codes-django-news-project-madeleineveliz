@@ -1,54 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
 
 body {
-    background-color: rgb(240, 239, 239);
+    background-color: #fff;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #000;
+    justify-content:center;
+    /* border-bottom: 1px solid #000; */
 }
 
-img {
+/* img {
     filter: grayscale(100%);
-}
+} */
 
 h1 {
-    font-family: 'Montserrat Subrayada', sans-serif;
-    text-decoration: none;
-    font-size: 4rem;
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* text-decoration: none; */
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 30px;
+    color: #8245af;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
 }
 
 h2 {
-   font-family: 'Montserrat Subrayada', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffa301;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
 }
 
 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
     font-size: 2rem;
-    margin: 0;
+    color: #ffa301;
+    /* margin: 0; */
+    display: flex;
+    align-items: center;
+    
 }
 
-#header-text {
-    flex-basis: 80%;
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #8245af;
     display: flex;
+    align-items: center;
 }
+
+/* #header-text { */
+    /* flex-basis: 80%; */
+    /* display: flex; */
+    /* align-items: center; */
+/* } */
 
 nav {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background: #8245af;
+    display: flex;
+    justify-content: space-between;
 }
 
 a {
     margin: 2px;
     text-decoration: none;
     color: #000;
+    
 }
 
 a, p {
     font-family: monospace;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: #8245af;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
 }

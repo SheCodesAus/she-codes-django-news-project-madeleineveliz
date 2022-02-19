@@ -13,18 +13,21 @@
         {% block stylesheets %}{% endblock %}
     </head>
 
+    {% include './nav.html' %}
+
     <body>
         <header>
-            <div id="header-text">
-                <a id="header-link" href="{% url 'news:index' %}">
-                    <h1>She {Codes} News</h1>
-                </a>
-            </div>
-            <!-- include nav here -->
-            {% include './nav.html' %}
-        </header>
+            <!-- <div id="header-text"> -->
+                <!-- <a id="header-link" href="{% url 'news:index' %}"> -->
+                    <h1>She </h1><h2> {Codes} </h2> <h1> News</h1>
+                <!-- </a> -->
+            <!-- </div> -->
 
+        </header>
         <!-- content blocks here -->
         {% block content %}{% endblock %}
     </body>
+    <footer>
+        She Codes Plus Perth, by Madeleine Veliz ©
+    </footer>
 </html>

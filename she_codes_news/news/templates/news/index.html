@@ -7,7 +7,7 @@
 
 {% block content %}
     <a href="{%url 'news:newStory' %}">Write New Story</a>
-    <h2>Latest News</h2>
+    <h3>Latest News</h3>
 
     <div id="latest-stories">
         {% if latest_stories %}
@@ -19,6 +19,7 @@
         {% endif %}
     </div>
 
+    <h3>All News</h3>
     <div id="all-stories">
         {% if all_stories %}
             {% for story in all_stories %}
