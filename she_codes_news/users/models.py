@@ -8,3 +8,7 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+
+class UserProfile(models.Model):
+    username   = models.OneToOneField(User)
+    avatar = models.ImageField()

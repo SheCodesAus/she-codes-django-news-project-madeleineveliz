@@ -2,7 +2,7 @@
     <a href="{% url 'news:index' %}">HOME</a>
     {% if request.user.is_authenticated %}
         <!-- <a href="#">{{ user.username }}</a> -->
-        <a href="#">MY ACCOUNT</a>
+        <a href="{% url 'users:createAccount' %}">MY ACCOUNT</a>
         <a href="{% url 'logout' %}">LOGOUT</a>
     {% else %}
         <a href="{% url 'users:createAccount' %}">CREATE ACCOUNT</a>
