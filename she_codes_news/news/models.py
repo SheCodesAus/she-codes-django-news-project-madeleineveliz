@@ -15,7 +15,7 @@ class NewsStory(models.Model):
 
     pub_date = models.DateTimeField(verbose_name="Date")
     content = models.TextField()
-    # image_url = models.URLField(verbose_name= "Image URL", max_length=200)
+    image_url = models.URLField(null=True, blank=True, verbose_name= "Image URL", max_length=200)
 
 
 
