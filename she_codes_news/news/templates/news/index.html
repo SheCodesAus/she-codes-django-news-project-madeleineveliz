@@ -5,9 +5,20 @@
 <link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
 {% endblock %}
 
+
 {% block content %}
-    <a id = "write-new" href="{%url 'news:newStory' %}">Write New Story</a>
-    <h3>Latest News</h3>
+    <div style="text-align: center;"> 
+        <aside style="width:20%;margin-left:auto;margin-right:auto;">
+            <h3>Hello, {{user.username|default:'Guest'}} ♥</h3>
+            {% if request.user.is_authenticated %}
+                <a id = "write-new" href="{%url 'news:newStory' %}">Write New Story </a>
+            {% endif %}
+         </aside>
+    </div>
+
+
+        <h3>Latest News</h3>
+    
 
     <div id="latest-stories">
         {% if latest_stories %}
