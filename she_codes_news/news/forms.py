@@ -8,7 +8,7 @@ class StoryForm(ModelForm):
 
     title = forms.CharField(widget=forms.TextInput(attrs={"class":"form-control",
     "placeholder": "Title"}))
-    content = forms.CharField(widget=forms.Textarea(attrs={"placeholder":"Your amazing story goes here ♥"}))
+    content = forms.CharField(widget=forms.Textarea(attrs={"placeholder":"Your amazing story goes here ♡"}))
     # image_url = forms.URLField(widget=forms.URLInput(attrs={'placeholder': "Image URL"}))
     # pub_date = forms.DateField(widget = forms.DateInput(format=('%m/%d/%Y'),attrs= {'id': 'date', 'class':'form-control','placeholder':'Select a date','type':'date'}),)
     
