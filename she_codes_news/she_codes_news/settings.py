@@ -17,7 +17,7 @@ import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-# CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -37,12 +37,13 @@ DEBUG = os.environ.get('DJANGO_DEBUG') != 'False'
 
 ALLOWED_HOSTS = ['*']
 
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
 INSTALLED_APPS = [
     'news.apps.NewsConfig',
-    # 'corsheaders',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +56,7 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = 'users.CustomUser'
 
 MIDDLEWARE = [
-    # 'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
