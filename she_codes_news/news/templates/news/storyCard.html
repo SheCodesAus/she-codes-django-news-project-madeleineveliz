@@ -2,7 +2,7 @@
     <a href="{% url 'news:story' story.id %}">
         <img src="{{story.image_url}}">
 
-        <div class="story-card-text">
+        <div class="story-card-text" style="text-align: center;">
             <h3>{{ story.title }}</h3>
             <h4>Written by {{ story.author }} ♡</h4>
             <!-- <h4>{{ story.pub_date }}</h4> -->
