@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import ModelForm
 from .models import NewsStory 
-from django.utils import timezone
+# from django.utils import timezone
 
 class StoryForm(ModelForm):
 #     error_css_class = 'error-field'
@@ -22,6 +22,6 @@ class StoryForm(ModelForm):
             attrs={'id':'date', 'class':'form-control','placeholder':'Select a date',
             'type':'date'}),}
     
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['pub_date'].initial = timezone.now().strftime("%Y-%m-%dT%H:%M")
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(*args, **kwargs)
+    #     self.fields['pub_date'].initial = timezone.now().strftime("%Y-%m-%dT%H:%M")
