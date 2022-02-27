@@ -81,15 +81,15 @@ a {
     font-weight: 400;
     margin: 1px;
     text-decoration: none;
-    color: #ffa301;
+    color: #fff;
     /* display: flex;
     align-items: center; */
     
 }
 
-/* #write-new {
+#write-new {
     color: #000;
-} */
+}
 
 /* a, p {
     font-family: monospace;
