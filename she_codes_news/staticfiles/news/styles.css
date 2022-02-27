@@ -76,14 +76,14 @@
     justify-content: space-between;
 }
 
-#all-stories .story-card {
+/* #all-stories .story-card {
     flex-basis: 32%;
     flex-grow: 1;
 }
 
 #story-content {
     text-align: justify;
-}
+} */
 
 #story-content img {
     float: right;
