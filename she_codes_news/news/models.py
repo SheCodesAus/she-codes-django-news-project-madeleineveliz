@@ -20,7 +20,7 @@ class NewsStory(models.Model):
 
 
     class Meta:
-        ordering = ['-pub_date']
+        ordering = ['-pub_date',]
 
     def __str__(self):
         return self.title
